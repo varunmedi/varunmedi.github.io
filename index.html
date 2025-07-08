@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Varun Kumar Medi's Portfolio</title>
+</head>
+<body>
+
+<header>
+    <nav class="navbar">
+        <div class="logo"><a href="#home">Varun Kumar Medi</a></div>
+        <ul class="nav-list">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#" target="_blank">CV</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo"><a href="#home">Varun Kumar Medi</a></div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#" target="_blank" onclick="toggleMenu()">CV</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<div class="content">
+    <section id="home">
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img src="./images/portfolio-modified.jpg" alt="Varun's profile picture" />
+            </div>
+            <div class="section__text">
+                <p class="section__text__p1">Hello, I'm</p>
+                <h1 class="title">Varun Kumar Medi</h1>
+                <p class="section__text__p2">MSCS Student at University of Illinois Springfield</p>
+                <div id="socials-container">
+                    <img
+                            src="./images/linkedin.png"
+                            alt="My LinkedIn profile"
+                            class="icon"
+                            onclick="window.open('https://www.linkedin.com/in/varunmedi/', '_blank')"
+                    />
+                    <img
+                            src="./images/github.png"
+                            alt="My Github profile"
+                            class="icon"
+                            onclick="window.open('https://github.com/varunmedi', '_blank')"
+                    />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>
+            Hello! I'm Varun Kumar Medi, currently pursuing my Masters in Computer Science at the University of Illinois Springfield, expecting to graduate in December 2025. I am a passionate software engineer with expertise in full-stack development, cloud technologies, and data science. With over 3 years of professional experience at companies like Ford Motor Company, Lloyds Banking Group, and currently interning at Frigate, I have developed a strong foundation in building scalable web applications and microservices.
+        </p>
+        <p>
+            I'm proficient in multiple programming languages including Java, TypeScript, JavaScript, Python, and C#, with extensive experience in frameworks like React, Spring Boot, Angular, and cloud platforms such as Google Cloud Platform, AWS, and Azure. I am actively seeking full-time opportunities in Software Development and Machine Learning for 2026. I regularly practice problem-solving on <a href="https://leetcode.com/u/varunmedi/" target="_blank">LeetCode</a> to sharpen my algorithmic skills. You can explore my work on my <a href="https://github.com/varunmedi" target="_blank">GitHub</a> and connect with me on <a href="https://www.linkedin.com/in/varunmedi/" target="_blank">LinkedIn</a>.
+        </p>
+        <p>
+            Outside of technology, I enjoy exploring new cultures and cuisines, staying active through various sports, and keeping up with the latest trends in software development. I'm always eager to learn new technologies and contribute to innovative projects that make a positive impact.
+        </p>
+    </section>
+
+    <hr class="project-separator">
+
+    <div class="container">
+        <div class="col">
+            <section id="experience">
+                <h2>Education/Experience</h2>
+                <div class="contents">
+
+                    <div class="box">
+                        <h4>Jun 2017 - May 2021</h4>
+                        <h3>Andhra University, Visakhapatnam, India</h3>
+                        <p>Bachelor of Technology in Computer Science and Engineering</p>
+                    </div>
+
+                    <div class="box">
+                        <h4>Jun 2021 - Sep 2021</h4>
+                        <h3>ValueMomentum, Hyderabad, India</h3>
+                        <p>Software Engineer</p>
+                    </div>
+
+                    <div class="box">
+                        <h4>Oct 2021 - Jan 2024</h4>
+                        <h3>Ford Motor Company, Chennai, India</h3>
+                        <p>Software Engineer</p>
+                    </div>
+
+                    <div class="box">
+                        <h4>Feb 2024 - Aug 2024</h4>
+                        <h3>Lloyds Banking Group, Hyderabad, India</h3>
+                        <p>Software Engineer</p>
+                    </div>
+
+                    <div class="box">
+                        <h4>Aug 2024 - Dec 2025</h4>
+                        <h3>University of Illinois Springfield, USA</h3>
+                        <p>Masters of Science in Computer Science</p>
+                    </div>
+
+                    <div class="box">
+                        <h4>Sep 2024 - Apr 2025</h4>
+                        <h3>University of Illinois System, Springfield, USA</h3>
+                        <p>Web Development Intern</p>
+                    </div>
+
+                    <div class="box">
+                        <h4>May 2025 - Present</h4>
+                        <h3>Frigate, San Diego, USA</h3>
+                        <p>Software Engineering Intern</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <hr class="project-separator">
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <section class="project">
+            <div class="project-header">
+                <h3>BuildEstate – AI-Powered Real Estate Platform</h3>
+                <a href="#" class="project-link">
+                    <img
+                            src="./images/github.png"
+                            alt="My Github profile"
+                            class="icon1"
+                            onclick="window.open('https://github.com/varunmedi/real-estate-website', '_blank')"
+                    />
+                </a>
+            </div>
+            <p class="project-description">Developed a full-stack real estate marketplace with advanced property search, JWT authentication, and admin dashboards. Integrated Azure OpenAI for AI-driven recommendations, market trend analysis, and ROI prediction using prompt engineering and RESTful service orchestration, featuring responsive UI, agent-buyer messaging, and robust data validation for secure transactions.</p>
+        </section>
+
+        <section class="project">
+            <div class="project-header">
+                <h3>Bank Marketing Data Analysis</h3>
+                <a href="#" class="project-link">
+                    <img
+                            src="./images/github.png"
+                            alt="My Github profile"
+                            class="icon1"
+                            onclick="window.open('https://github.com/varunmedi/bank-marketing-data-analysis', '_blank')"
+                    />
+                </a>
+            </div>
+            <p class="project-description">Predicted customer subscription likelihood to a bank scheme using advanced imputation, categorical encoding, and dimensionality reduction. Built KNN (KD Tree, ANNOY) and Decision Tree models from scratch, achieving results comparable to scikit-learn implementations.</p>
+        </section>
+
+        <section class="project">
+            <div class="project-header">
+                <h3>Reddit Search Engine</h3>
+                <a href="#" class="project-link">
+                    <img
+                            src="./images/github.png"
+                            alt="My Github profile"
+                            class="icon1"
+                            onclick="window.open('https://github.com/varunmedi/reddit-search-engine', '_blank')"
+                    />
+                </a>
+            </div>
+            <p class="project-description">Engineered a scalable, multithreaded web crawler with PRAW to scrape 1M+ Reddit posts from 30+ subreddits. Created a robust PyLucene-based search index for fast retrieval and implemented custom ranking algorithms for accurate, relevant sorting.</p>
+        </section>
+
+        <section class="project">
+            <div class="project-header">
+                <h3>Signatureless Ransomware Detection</h3>
+                <a href="#" class="project-link">
+                    <img
+                            src="./images/github.png"
+                            alt="My Github profile"
+                            class="icon1"
+                            onclick="window.open('https://github.com/varunmedi', '_blank')"
+                    />
+                </a>
+            </div>
+            <p class="project-description">Designed a kernel-level ransomware detection system using a Windows minifilter driver, leveraging behavioral analysis and entropy-based algorithms to distinguish malicious file access patterns from legitimate application requests in real time.</p>
+        </section>
+
+    </section>
+
+    <hr class="project-separator">
+
+    <section id="contact">
+        <section class="contact-info">
+            <h2>Contact Info</h2>
+            <ul>
+                <li>Email:
+                    <a href="mailto:varunkumarmedi9@gmail.com">varunkumarmedi9@gmail.com</a>
+                    <span>|</span>
+                    <a href="mailto:vmedi@uis.edu">vmedi@uis.edu</a>
+                </li>
+                <li>Phone: +1 (217) 761-7869</li>
+                <li>Location: Springfield, IL</li>
+            </ul>
+        </section>
+    </section>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
