@@ -1,265 +1,304 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Varun Kumar Medi's Portfolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Varun Kumar Medi — Software Engineer specializing in Java, Spring Boot, microservices, and cloud-native systems on GCP, AWS, and Azure.">
+  <title>Varun Kumar Medi — Software Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<header>
-    <nav class="navbar">
-        <div class="logo"><a href="#home">Varun Kumar Medi</a></div>
-        <ul class="nav-list">
-            <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="https://drive.google.com/file/d/1DvFkCccAxhZ5IYTamsTiCf86XcvEZzTO/view?usp=sharing" target="_blank">CV</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-    <nav id="hamburger-nav">
-        <div class="logo"><a href="#home">Varun Kumar Medi</a></div>
-        <div class="hamburger-menu">
-            <div class="hamburger-icon" onclick="toggleMenu()">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <div class="menu-links">
-                <li><a href="#about" onclick="toggleMenu()">About</a></li>
-                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-                <li><a href="https://drive.google.com/file/d/1DvFkCccAxhZ5IYTamsTiCf86XcvEZzTO/view?usp=sharing" target="_blank" onclick="toggleMenu()">CV</a></li>
-                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-            </div>
-        </div>
-    </nav>
+
+<header class="site-header" id="site-header">
+  <nav class="nav" aria-label="Primary">
+    <a class="nav__logo" href="#home">VKM<span class="nav__logo-dot">.</span></a>
+    <ul class="nav__list" id="nav-list">
+      <li><a class="nav__link" href="#about">About</a></li>
+      <li><a class="nav__link" href="#experience">Experience</a></li>
+      <li><a class="nav__link" href="#projects">Projects</a></li>
+      <li><a class="nav__link" href="https://drive.google.com/file/d/1DvFkCccAxhZ5IYTamsTiCf86XcvEZzTO/view?usp=sharing" target="_blank" rel="noopener">CV</a></li>
+      <li><a class="nav__link nav__link--cta" href="#contact">Contact</a></li>
+    </ul>
+    <button class="nav__toggle" id="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="nav-list">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
 </header>
-<div class="content">
-    <section id="home">
-        <div class="section-container">
-            <div class="section__pic-container">
-                <img src="./images/portfolio-modified.jpg" alt="Varun's profile picture" />
-            </div>
-            <div class="section__text">
-                <p class="section__text__p1">Hello, I'm</p>
-                <h1 class="title">Varun Kumar Medi</h1>
-                <p class="section__text__p2">Software Engineer | Full-Stack | Cloud & Distributed Systems</p>
-                <div id="socials-container">
-                    <img
-                            src="./images/linkedin.png"
-                            alt="My LinkedIn profile"
-                            class="icon"
-                            onclick="window.open('https://www.linkedin.com/in/varunmedi/', '_blank')"
-                    />
-                    <img
-                            src="./images/github.png"
-                            alt="My Github profile"
-                            class="icon"
-                            onclick="window.open('https://github.com/varunmedi', '_blank')"
-                    />
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- UPDATED ABOUT SECTION -->
-    <section id="about">
-        <h2>About Me</h2>
-        <p>
-            Hello! I'm Varun Kumar Medi, a Software Engineer with <strong>5.7 years of experience</strong> designing and developing
-            <strong>scalable full-stack applications</strong> using <strong>Java, Spring Boot</strong>, and modern front-end technologies in
-            Agile environments. I specialize in building <strong>RESTful APIs, microservices</strong>, and <strong>cloud-native solutions</strong>
-            across fintech, banking, automotive, insurance, and e-commerce domains.
+<main>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="home">
+    <div class="hero__grid" aria-hidden="true"></div>
+    <div class="hero__inner">
+      <div class="hero__text">
+        <p class="hero__eyebrow reveal-load">SOFTWARE ENGINEER · SPRINGFIELD, IL</p>
+        <h1 class="hero__title reveal-load">Varun Kumar&nbsp;Medi</h1>
+        <p class="hero__subtitle reveal-load">
+          I design and build <strong>scalable backend systems</strong> and full-stack
+          applications — Java, Spring Boot, microservices, and cloud-native
+          architecture on GCP, AWS, and Azure.
         </p>
-        <p>
-            I have hands-on experience with <strong>Google Cloud Platform (GCP), AWS, and Azure</strong>, designing and developing distributed data processing pipelines, near real-time event-driven systems, and cloud-native architectures using <strong>Kubernetes, Docker, Kafka, Pub/Sub, Dataflow, RabbitMQ, and Redis</strong>. 
-            I own end-to-end responsibility for code reviews, testing, CI/CD automation, monitoring, alerting, logging, performance optimization, and production support while collaborating closely with product managers, stakeholders, and cross-functional teams.
-        </p>
-        <p>
-            I hold a <strong>Master’s degree in Computer Science</strong> from the <strong>University of Illinois Springfield</strong>, and a
-            Bachelor’s in Computer Science from <strong>Andhra University</strong>. You can explore my work on my
-            <a href="https://github.com/varunmedi" target="_blank">GitHub</a> and connect with me on
-            <a href="https://www.linkedin.com/in/varunmedi/" target="_blank">LinkedIn</a>.
-        </p>
-
-        <!-- OPTIONAL: QUICK SKILLS HIGHLIGHT (HTML-friendly) -->
-        <div class="about-skills">
-            <h3>Core Skills</h3>
-            <ul>
-                <li><strong>Backend & Languages:</strong> Java, Spring Boot, Hibernate, RESTful APIs, Microservices, TypeScript, JavaScript, Python, SQL, PL/SQL</li>
-                <li><strong>Frontend:</strong> React.js, Angular, AngularJS, Node.js, HTML5, CSS3, Bootstrap, jQuery</li>
-                <li><strong>Cloud & Data:</strong> GCP, AWS, Azure, Pub/Sub, Dataflow, Azure Data Factory, Apigee, IBM APIC</li>
-                <li><strong>DevOps & Containers:</strong> Docker, Kubernetes, Jenkins, Tekton, GitHub Actions, Terraform</li>
-                <li><strong>Streaming & Caching:</strong> Apache Kafka, RabbitMQ, Redis</li>
-                <li><strong>Databases:</strong> PostgreSQL, Microsoft SQL Server, Oracle, MongoDB, MySQL</li>
-                <li><strong>Observability & Quality:</strong> Splunk, Dynatrace, Grafana, SonarQube, FOSSA, Checkmarx, JUnit, Mockito, JaCoCo, Playwright</li>
-                <li><strong>Security & Auth:</strong> OAuth, JWT, Spring Security</li>
-                <li><strong>Methodology:</strong> Agile, Scrum</li>
-            </ul>
+        <div class="hero__actions reveal-load">
+          <a class="btn btn--primary" href="#projects">View projects</a>
+          <a class="btn btn--ghost" href="https://drive.google.com/file/d/1DvFkCccAxhZ5IYTamsTiCf86XcvEZzTO/view?usp=sharing" target="_blank" rel="noopener">Download CV</a>
         </div>
-    </section>
-
-    <hr class="project-separator">
-
-    <div class="container">
-        <div class="col">
-            <!-- UPDATED EXPERIENCE / EDUCATION TIMELINE -->
-            <section id="experience">
-                <h2>Experience & Education</h2>
-                <div class="contents">
-
-                    <!-- Education -->
-                    <div class="box">
-                        <h4>Aug 2024 – Dec 2025</h4>
-                        <h3>University of Illinois Springfield, USA</h3>
-                        <p>Master’s in Computer Science</p>
-                    </div>
-
-                    <!-- Current Role -->
-                    <div class="box">
-                        <h4>Aug 2024 – Present</h4>
-                        <h3>Tech Tammina (Frigate), Springfield, IL, USA</h3>
-                        <p>Software Engineer</p>
-                    </div>
-
-                    <!-- Lloyds -->
-                    <div class="box">
-                        <h4>Feb 2024 – Aug 2024</h4>
-                        <h3>Lloyds Banking Group, Hyderabad, India</h3>
-                        <p>Software Engineer</p>
-                    </div>
-
-                    <!-- Ford -->
-                    <div class="box">
-                        <h4>Oct 2021 – Jan 2024</h4>
-                        <h3>Ford Motor Company, Chennai, India</h3>
-                        <p>Software Engineer</p>
-                    </div>
-
-                    <!-- Erie Insurance -->
-                    <div class="box">
-                        <h4>Jun 2021 – Sep 2021</h4>
-                        <h3>ValueMomentum (Erie Insurance Group), Hyderabad, India</h3>
-                        <p>Software Engineer</p>
-                    </div>
-
-                    <!-- Trainee -->
-                    <div class="box">
-                        <h4>Jun 2020 – May 2021</h4>
-                        <h3>Tech Tammina, Visakhapatnam, India</h3>
-                        <p>Trainee Developer</p>
-                    </div>
-
-                    <!-- Undergraduate -->
-                    <div class="box">
-                        <h4>Jun 2017 – May 2021</h4>
-                        <h3>Andhra University, Visakhapatnam, India</h3>
-                        <p>Bachelor’s in Computer Science</p>
-                    </div>
-
-                </div>
-            </section>
+        <div class="hero__socials reveal-load">
+          <a href="https://www.linkedin.com/in/varunmedi/" target="_blank" rel="noopener" aria-label="LinkedIn profile">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45z"/></svg>
+          </a>
+          <a href="https://github.com/varunmedi" target="_blank" rel="noopener" aria-label="GitHub profile">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.45-1.16-1.11-1.47-1.11-1.47-.9-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.9 1.52 2.34 1.08 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.56-1.11-4.56-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.02a9.56 9.56 0 0 1 5 0c1.91-1.29 2.75-1.02 2.75-1.02.55 1.37.2 2.39.1 2.64.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.85v2.75c0 .27.18.58.69.48A10 10 0 0 0 12 2z"/></svg>
+          </a>
         </div>
+        <p class="hero__status reveal-load"><span class="hero__status-dot"></span>Open to full-time &amp; contract roles</p>
+      </div>
+      <div class="hero__pic reveal-load">
+        <div class="hero__pic-frame">
+          <img src="./images/portfolio-modified.jpg" alt="Portrait of Varun Kumar Medi" width="300" height="300">
+        </div>
+      </div>
     </div>
+  </section>
 
-    <hr class="project-separator">
+  <!-- ============ ABOUT ============ -->
+  <section class="section" id="about">
+    <div class="section__inner">
+      <p class="section__eyebrow reveal">ABOUT</p>
+      <h2 class="section__title reveal">Engineering reliable systems, end&nbsp;to&nbsp;end</h2>
+      <div class="about__grid">
+        <div class="about__copy reveal">
+          <p>
+            I'm a Software Engineer with <strong>5.7 years of experience</strong> designing and developing
+            scalable full-stack applications using <strong>Java and Spring Boot</strong> in Agile environments.
+            I specialize in <strong>RESTful APIs, microservices, and cloud-native solutions</strong> across
+            fintech, banking, automotive, insurance, and e-commerce domains.
+          </p>
+          <p>
+            I have hands-on experience with <strong>Google Cloud Platform, AWS, and Azure</strong> — building
+            distributed data-processing pipelines, near real-time event-driven systems, and cloud-native
+            architectures with Kubernetes, Docker, Kafka, Pub/Sub, Dataflow, RabbitMQ, and Redis. I own
+            end-to-end responsibility for code reviews, testing, CI/CD automation, monitoring, performance
+            optimization, and production support, collaborating closely with product managers and
+            cross-functional teams.
+          </p>
+          <p>
+            I hold a <strong>Master's in Computer Science</strong> from the University of Illinois Springfield
+            and a Bachelor's in Computer Science from Andhra University.
+          </p>
+        </div>
+        <aside class="about__facts reveal">
+          <div class="fact">
+            <span class="fact__num">5.7+</span>
+            <span class="fact__label">Years of experience</span>
+          </div>
+          <div class="fact">
+            <span class="fact__num">5</span>
+            <span class="fact__label">Industries — fintech, banking, automotive, insurance, e-commerce</span>
+          </div>
+          <div class="fact">
+            <span class="fact__num">3</span>
+            <span class="fact__label">Cloud platforms — GCP, AWS, Azure</span>
+          </div>
+        </aside>
+      </div>
 
-    <section id="projects">
-        <h2>Projects</h2>
-        
-        <section class="project">
-            <div class="project-header">
-                <h3>BuildEstate – AI-Powered Real Estate Platform</h3>
-                <a href="#" class="project-link">
-                    <img
-                            src="./images/github.png"
-                            alt="GitHub"
-                            class="icon1"
-                            onclick="window.open('https://github.com/varunmedi/real-estate-website', '_blank')"
-                    />
-                </a>
-            </div>
-            <p class="project-description">
-                Developed a full-stack real estate marketplace with advanced property search, JWT authentication, and admin dashboards.
-                Integrated Azure OpenAI for AI-driven recommendations, market trend analysis, and ROI prediction using prompt engineering and
-                RESTful service orchestration, featuring responsive UI, agent-buyer messaging, and robust data validation for secure transactions.
-            </p>
-        </section>
+      <div class="skills reveal">
+        <h3 class="skills__heading">Core skills</h3>
+        <div class="skills__groups">
+          <div class="skill-group">
+            <h4>Backend &amp; Languages</h4>
+            <ul><li>Java</li><li>Spring Boot</li><li>Hibernate</li><li>REST APIs</li><li>Microservices</li><li>TypeScript</li><li>JavaScript</li><li>Python</li><li>SQL / PL-SQL</li></ul>
+          </div>
+          <div class="skill-group">
+            <h4>Frontend</h4>
+            <ul><li>React.js</li><li>Angular</li><li>Node.js</li><li>HTML5</li><li>CSS3</li><li>Bootstrap</li><li>jQuery</li></ul>
+          </div>
+          <div class="skill-group">
+            <h4>Cloud &amp; Data</h4>
+            <ul><li>GCP</li><li>AWS</li><li>Azure</li><li>Pub/Sub</li><li>Dataflow</li><li>Azure Data Factory</li><li>Apigee</li><li>IBM APIC</li></ul>
+          </div>
+          <div class="skill-group">
+            <h4>DevOps &amp; Containers</h4>
+            <ul><li>Docker</li><li>Kubernetes</li><li>Jenkins</li><li>Tekton</li><li>GitHub Actions</li><li>Terraform</li></ul>
+          </div>
+          <div class="skill-group">
+            <h4>Streaming, Caching &amp; Databases</h4>
+            <ul><li>Kafka</li><li>RabbitMQ</li><li>Redis</li><li>PostgreSQL</li><li>SQL Server</li><li>Oracle</li><li>MongoDB</li><li>MySQL</li></ul>
+          </div>
+          <div class="skill-group">
+            <h4>Quality, Observability &amp; Security</h4>
+            <ul><li>Splunk</li><li>Dynatrace</li><li>Grafana</li><li>SonarQube</li><li>JUnit</li><li>Mockito</li><li>Playwright</li><li>OAuth</li><li>JWT</li><li>Spring Security</li></ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-        <section class="project">
-            <div class="project-header">
-                <h3>Bank Marketing Data Analysis</h3>
-                <a href="#" class="project-link">
-                    <img
-                            src="./images/github.png"
-                            alt="GitHub"
-                            class="icon1"
-                            onclick="window.open('https://github.com/varunmedi/bank-marketing-data-analysis', '_blank')"
-                    />
-                </a>
-            </div>
-            <p class="project-description">
-                Predicted customer subscription likelihood to a bank scheme using advanced imputation, categorical encoding, and dimensionality reduction.
-                Built KNN (KD Tree, ANNOY) and Decision Tree models from scratch, achieving results comparable to scikit-learn implementations.
-            </p>
-        </section>
+  <!-- ============ EXPERIENCE ============ -->
+  <section class="section section--tinted" id="experience">
+    <div class="section__inner">
+      <p class="section__eyebrow reveal">EXPERIENCE &amp; EDUCATION</p>
+      <h2 class="section__title reveal">Career timeline</h2>
+      <div class="timeline">
 
-        <section class="project">
-            <div class="project-header">
-                <h3>Reddit Search Engine</h3>
-                <a href="#" class="project-link">
-                    <img
-                            src="./images/github.png"
-                            alt="GitHub"
-                            class="icon1"
-                            onclick="window.open('https://github.com/varunmedi/reddit-search-engine', '_blank')"
-                    />
-                </a>
-            </div>
-            <p class="project-description">
-                Engineered a scalable, multithreaded web crawler with PRAW to scrape 1M+ Reddit posts from 30+ subreddits.
-                Created a robust PyLucene-based search index for fast retrieval and implemented custom ranking algorithms for accurate, relevant sorting.
-            </p>
-        </section>
+        <article class="timeline__item reveal">
+          <div class="timeline__marker" aria-hidden="true"></div>
+          <div class="timeline__card">
+            <div class="timeline__meta"><span class="tag tag--work">Current role</span><span class="timeline__date">Aug 2024 — Present</span></div>
+            <h3>Tech Tammina — Frigate</h3>
+            <p class="timeline__role">Software Engineer · Springfield, IL, USA</p>
+          </div>
+        </article>
 
-        <section class="project">
-            <div class="project-header">
-                <h3>Signatureless Ransomware Detection</h3>
-                <a href="#" class="project-link">
-                    <img
-                            src="./images/github.png"
-                            alt="GitHub"
-                            class="icon1"
-                            onclick="window.open('https://github.com/varunmedi/signatureless-ransomware-detection', '_blank')"
-                    />
-                </a>
-            </div>
-            <p class="project-description">
-                Designed a kernel-level ransomware detection system using a Windows minifilter driver, leveraging behavioral analysis and entropy-based
-                algorithms to distinguish malicious file access patterns from legitimate application requests in real time.
-            </p>
-        </section>
-    </section>
+        <article class="timeline__item reveal">
+          <div class="timeline__marker" aria-hidden="true"></div>
+          <div class="timeline__card">
+            <div class="timeline__meta"><span class="tag tag--edu">Education</span><span class="timeline__date">Aug 2024 — Dec 2025</span></div>
+            <h3>University of Illinois Springfield</h3>
+            <p class="timeline__role">Master's in Computer Science · Springfield, IL, USA</p>
+          </div>
+        </article>
 
-    <hr class="project-separator">
+        <article class="timeline__item reveal">
+          <div class="timeline__marker" aria-hidden="true"></div>
+          <div class="timeline__card">
+            <div class="timeline__meta"><span class="tag tag--work">Work</span><span class="timeline__date">Feb 2024 — Aug 2024</span></div>
+            <h3>Lloyds Banking Group</h3>
+            <p class="timeline__role">Software Engineer · Hyderabad, India</p>
+          </div>
+        </article>
 
-    <section id="contact">
-        <section class="contact-info">
-            <h2>Contact Info</h2>
-            <ul>
-                <li>Email:
-                    <a href="mailto:varunkumarmedi9@gmail.com">varunkumarmedi9@gmail.com</a>
-                    <span>|</span>
-                    <a href="mailto:vmedi@uis.edu">vmedi@uis.edu</a>
-                </li>
-                <li>Phone: +1 (217) 761-7869</li>
-                <li>Location: Springfield, IL</li>
-            </ul>
-        </section>
-    </section>
-</div>
+        <article class="timeline__item reveal">
+          <div class="timeline__marker" aria-hidden="true"></div>
+          <div class="timeline__card">
+            <div class="timeline__meta"><span class="tag tag--work">Work</span><span class="timeline__date">Oct 2021 — Jan 2024</span></div>
+            <h3>Ford Motor Company</h3>
+            <p class="timeline__role">Software Engineer · Chennai, India</p>
+          </div>
+        </article>
+
+        <article class="timeline__item reveal">
+          <div class="timeline__marker" aria-hidden="true"></div>
+          <div class="timeline__card">
+            <div class="timeline__meta"><span class="tag tag--work">Work</span><span class="timeline__date">Jun 2021 — Sep 2021</span></div>
+            <h3>ValueMomentum — Erie Insurance Group</h3>
+            <p class="timeline__role">Software Engineer · Hyderabad, India</p>
+          </div>
+        </article>
+
+        <article class="timeline__item reveal">
+          <div class="timeline__marker" aria-hidden="true"></div>
+          <div class="timeline__card">
+            <div class="timeline__meta"><span class="tag tag--work">Work</span><span class="timeline__date">Jun 2020 — May 2021</span></div>
+            <h3>Tech Tammina</h3>
+            <p class="timeline__role">Trainee Developer · Visakhapatnam, India</p>
+          </div>
+        </article>
+
+        <article class="timeline__item reveal">
+          <div class="timeline__marker" aria-hidden="true"></div>
+          <div class="timeline__card">
+            <div class="timeline__meta"><span class="tag tag--edu">Education</span><span class="timeline__date">Jun 2017 — May 2021</span></div>
+            <h3>Andhra University</h3>
+            <p class="timeline__role">Bachelor's in Computer Science · Visakhapatnam, India</p>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PROJECTS ============ -->
+  <section class="section" id="projects">
+    <div class="section__inner">
+      <p class="section__eyebrow reveal">PROJECTS</p>
+      <h2 class="section__title reveal">Selected work</h2>
+      <div class="projects">
+
+        <a class="project-card reveal" href="https://github.com/varunmedi/real-estate-website" target="_blank" rel="noopener">
+          <div class="project-card__top">
+            <h3>BuildEstate — AI-Powered Real Estate Platform</h3>
+            <svg class="project-card__arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17L17 7M17 7H8M17 7v9"/></svg>
+          </div>
+          <p>
+            Full-stack real estate marketplace with advanced property search, JWT authentication,
+            and admin dashboards. Integrated Azure OpenAI for AI-driven recommendations, market
+            trend analysis, and ROI prediction, with agent–buyer messaging and robust data validation.
+          </p>
+          <ul class="project-card__tags"><li>Full-stack</li><li>Azure OpenAI</li><li>JWT</li><li>REST</li></ul>
+        </a>
+
+        <a class="project-card reveal" href="https://github.com/varunmedi/bank-marketing-data-analysis" target="_blank" rel="noopener">
+          <div class="project-card__top">
+            <h3>Bank Marketing Data Analysis</h3>
+            <svg class="project-card__arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17L17 7M17 7H8M17 7v9"/></svg>
+          </div>
+          <p>
+            Predicted customer subscription likelihood using advanced imputation, categorical
+            encoding, and dimensionality reduction. Built KNN (KD-Tree, ANNOY) and Decision Tree
+            models from scratch, matching scikit-learn implementations.
+          </p>
+          <ul class="project-card__tags"><li>Machine learning</li><li>Python</li><li>KNN</li><li>Decision trees</li></ul>
+        </a>
+
+        <a class="project-card reveal" href="https://github.com/varunmedi/reddit-search-engine" target="_blank" rel="noopener">
+          <div class="project-card__top">
+            <h3>Reddit Search Engine</h3>
+            <svg class="project-card__arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17L17 7M17 7H8M17 7v9"/></svg>
+          </div>
+          <p>
+            Scalable, multithreaded web crawler built with PRAW that scraped 1M+ Reddit posts across
+            30+ subreddits. PyLucene-based search index for fast retrieval with custom ranking
+            algorithms for relevant sorting.
+          </p>
+          <ul class="project-card__tags"><li>PyLucene</li><li>Multithreading</li><li>Information retrieval</li></ul>
+        </a>
+
+        <a class="project-card reveal" href="https://github.com/varunmedi/signatureless-ransomware-detection" target="_blank" rel="noopener">
+          <div class="project-card__top">
+            <h3>Signatureless Ransomware Detection</h3>
+            <svg class="project-card__arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17L17 7M17 7H8M17 7v9"/></svg>
+          </div>
+          <p>
+            Kernel-level ransomware detection system using a Windows minifilter driver — behavioral
+            analysis and entropy-based algorithms distinguish malicious file-access patterns from
+            legitimate requests in real time.
+          </p>
+          <ul class="project-card__tags"><li>Windows kernel</li><li>Security</li><li>Behavioral analysis</li></ul>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section class="contact" id="contact">
+    <div class="contact__inner">
+      <p class="section__eyebrow section__eyebrow--light reveal">CONTACT</p>
+      <h2 class="contact__title reveal">Let's build something reliable.</h2>
+      <p class="contact__sub reveal">I'm open to full-time and contract opportunities. The fastest way to reach me:</p>
+      <div class="contact__actions reveal">
+        <a class="btn btn--light" href="mailto:varunkumarmedi9@gmail.com">varunkumarmedi9@gmail.com</a>
+        <a class="btn btn--outline-light" href="tel:+12177617869">+1 (217) 761-7869</a>
+      </div>
+      <ul class="contact__meta reveal">
+        <li><a href="mailto:vmedi@uis.edu">vmedi@uis.edu</a></li>
+        <li>Springfield, IL</li>
+        <li><a href="https://www.linkedin.com/in/varunmedi/" target="_blank" rel="noopener">LinkedIn</a></li>
+        <li><a href="https://github.com/varunmedi" target="_blank" rel="noopener">GitHub</a></li>
+      </ul>
+    </div>
+    <footer class="footer">
+      <p>© 2026 Varun Kumar Medi · Built with plain HTML, CSS &amp; JS</p>
+    </footer>
+  </section>
+
+</main>
+
 <script src="script.js"></script>
 </body>
 </html>
