@@ -1,4 +1,13 @@
 document.addEventListener("DOMContentLoaded", () => {
+  /* ---------- Years of experience (auto-updates from June 2020) ---------- */
+  const CAREER_START = new Date(2020, 5, 1); // June 2020
+  const years = (Date.now() - CAREER_START.getTime()) / (365.25 * 24 * 3600 * 1000);
+  const label = `${Math.floor(years)}+`;
+  const expCard = document.getElementById("exp-years");
+  const expInline = document.getElementById("exp-years-inline");
+  if (expCard) expCard.textContent = label;
+  if (expInline) expInline.textContent = label;
+
   const header = document.getElementById("site-header");
   const navList = document.getElementById("nav-list");
   const navToggle = document.getElementById("nav-toggle");
